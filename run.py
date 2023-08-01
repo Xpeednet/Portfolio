@@ -5,7 +5,7 @@ from flask import Flask
 app=Flask(__name__)
 
 #Rutas de la aplicación
-@app.route('/')
+@app.route('/', methods=['GET'])
 def holamundo():
     return 'Hola Mundo'
 

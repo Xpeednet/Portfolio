@@ -5,28 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title%} {%endblock%}</title>
-    <!--Bootstrap CSS -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css' ) }}">
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 
 <body>
-    
-    {% include "nav/nav-bar.html" %}
+    <div class="capa1">
 
-    <div class="container-fluid"> <!--contenedor principal-->
-        <div class="container"> <!-- clase "container" de Bootstrap -->
-            <div class="row"> <!--clase "row"-->
-                <div class="col-8">
-                    {% block columna8 %}
+        {% include "nav/nav-bar.html" %}
 
-                    {% endblock %}
-                </div> <!-- Columna de tamaño 8-->
-                <div class="col-4">
-                    {% block columna4 %}
+        <div class="container-fluid"> <!--contenedor principal-->
+            <div class="container"> <!-- clase "container" de Bootstrap -->
+                <div class="row"> <!--clase "row"-->
+                    <div class="col-8">
+                        {% block columna8 %}
 
-                    {% endblock %}
-                </div> <!-- Columna de tamaño 4-->
+                        {% endblock %}
+                    </div> <!-- Columna de tamaño 8-->
+                    <div class="col-4">
+                        {% block columna4 %}
+
+                        {% endblock %}
+                    </div> <!-- Columna de tamaño 4-->
+                </div>
             </div>
         </div>
     </div>
@@ -35,6 +39,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/efecto-titulo.js' ) }}"></script>
 </body>
 
 </html>

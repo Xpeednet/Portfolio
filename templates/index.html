@@ -1,6 +1,8 @@
-{{% extends "/base/base.html" %}}
+{% extends "/base/base.html" %}
+
 {% block title %} Inicio {% endblock %}
-{% block content columna8 %}
+
+{% block columna8 %}
 <br>
 <div class="alert alert-success" role="alert">
     <h4 class="alert-heading">Bienvenido {{nombre}}</h4>
@@ -10,7 +12,7 @@
   </div>
 {% endblock %}
 
-{% block content columna4 %}
+{% block columna4 %}
 <p>Formulario</p>
 <form action="/" method="post">
     <div class="form-group">

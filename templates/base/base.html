@@ -11,16 +11,19 @@
 </head>
 
 <body>
+    
+    {% include "nav/nav-bar.html" %}
+
     <div class="container-fluid"> <!--contenedor principal-->
         <div class="container"> <!-- clase "container" de Bootstrap -->
             <div class="row"> <!--clase "row"-->
                 <div class="col-8">
-                    {% block content columna8 %}
+                    {% block columna8 %}
 
                     {% endblock %}
                 </div> <!-- Columna de tamaño 8-->
                 <div class="col-4">
-                    {% block content columna4 %}
+                    {% block columna4 %}
 
                     {% endblock %}
                 </div> <!-- Columna de tamaño 4-->

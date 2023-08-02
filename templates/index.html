@@ -9,7 +9,12 @@
     <p>Solicitudes GET y POST procesadas!</p>
     <hr>
     <p class="mb-0">Excelente!</p>
-  </div>
+</div>
+<div>
+    {% if nombre|length > 0 %}
+    <script type="text/javascript"> alert("Hola {{nombre}} eres un buen programador!"); </script>
+    {% endif %}
+</div>
 {% endblock %}
 
 {% block columna4 %}

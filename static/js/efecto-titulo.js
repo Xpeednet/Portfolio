@@ -1,4 +1,4 @@
-var words = ['Hola me gusta el HTML', 'Tambien me gusta CSS', 'Lorem ipsum dolor sit amet', ' consectetur adipiscing elit', 'sed do eiusmod tempor incididunt'],
+var words = ['HTML / CSS / Bootstrap', 'JavaScript / Vue', 'SQL', 'Python / Flask / Django'],
     part,
     i = 0,
     offset = 0,
